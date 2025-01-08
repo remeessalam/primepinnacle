@@ -58,10 +58,10 @@ const AllServices = () => {
         open={isOpen}
         onClose={() => setIsOpen(false)}
         direction="top"
-        className="p-4 z-10 w-screen"
+        className="p-4 z-10 w-screen !bg-white"
         lockBackgroundScroll
       >
-        <div className="mb-3 flex items-center justify-end pr-[.7rem] py-[.4rem]">
+        <div className="mb-3 flex items-center justify-end pr-[.7rem] py-[.4rem] ">
           <button
             onClick={() => setIsOpen(false)}
             className="text-white text-[2.2rem]"
@@ -69,9 +69,9 @@ const AllServices = () => {
             <X size={30} />
           </button>
         </div>
-        <div className="wrapper flex flex-col gap-6 tex-white pb-[2rem]">
-          <h1 className="heading-2">{selectedService.title}</h1>
-          <p className="desc whitespace-pre-line">
+        <div className="wrapper flex flex-col gap-6 tex-white pb-[2rem] ">
+          <h1 className="heading-2 text-white">{selectedService.title}</h1>
+          <p className="desc whitespace-pre-line !text-white">
             {selectedService.detailContent}
           </p>
         </div>
