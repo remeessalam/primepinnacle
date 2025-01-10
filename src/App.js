@@ -15,6 +15,7 @@ import { LoadingSpinner } from "./components/LoadingSpinner";
 import ScrollToTop from "./components/ScrollToTop";
 import WhatsAppIcon from "./components/WhatsAppIcon";
 import { Toaster } from "react-hot-toast";
+import BlogPage from "./pages/BlogPage";
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const ThankYou = lazy(() => import("./pages/ThankYou"));
 
@@ -50,6 +51,7 @@ function App() {
 
             <Route path="*" element={<Navigate to="/" />} />
             <Route path="/thank-you" element={<ThankYou />} />
+            <Route path="/blogs/:id" element={<BlogPage />} />
 
             {/* Landing pages */}
             <Route

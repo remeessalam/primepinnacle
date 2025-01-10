@@ -23,6 +23,7 @@ import { BiBarChartAlt2 } from "react-icons/bi";
 import { RiChatSmile2Line } from "react-icons/ri";
 import { SiApple, SiFlutter } from "react-icons/si";
 import { CgWebsite } from "react-icons/cg";
+import Blogs from "./pages/Blogs";
 
 export { logoImg };
 
@@ -57,6 +58,11 @@ export const routes = [
     path: "/contact-us",
     name: "Contact Us",
     element: <ContactUs />,
+  },
+  {
+    path: "/blogs",
+    name: "Blogs",
+    element: <Blogs />,
   },
 ];
 
