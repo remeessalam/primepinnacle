@@ -54,7 +54,7 @@ const OurValue = () => {
             </div>
           </div>
         </div>
-        <div
+        {/* <div
           data-aos="fade-up"
           className="bg-secondary flex flex-col gap-6 h-full justify-center rounded-xl p-10"
         >
@@ -94,7 +94,7 @@ const OurValue = () => {
               <div className="bg-primary h-full w-[90%]"></div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

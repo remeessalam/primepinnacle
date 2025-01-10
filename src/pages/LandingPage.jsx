@@ -36,7 +36,7 @@ const LandingPage = ({ page }) => {
     <>
       <LandingHeader />
       <section id="banner" className="h-screen relative text-white">
-        <div className="absolute top-0 w-full h-full bg-primary/50"></div>
+        <div className="absolute top-0 w-full h-full bg-black/60"></div>
         <img
           loading="lazy"
           src={bannerImg}
