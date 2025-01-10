@@ -27,12 +27,13 @@ import { CgWebsite } from "react-icons/cg";
 export { logoImg };
 
 export const companyDetails = {
-  phone: "+0000000000",
+  phone: "+91 93536 20347",
   address: "ABC Street, City, Country",
-  email: "abc@xyz.com",
-  linkedin: "",
-  instagram: "",
-  twitter: "",
+  email: "primepinnacletechsolutions@gmail.com",
+  linkedin:
+    "https://www.linkedin.com/in/primepinnacle-techsolutions-87130b2b3/  ",
+  instagram: "https://www.instagram.com/primepinnacletechsolutions",
+  twitter: "https://x.com/Primepinna54088",
 };
 
 export const routes = [
