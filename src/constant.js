@@ -28,7 +28,8 @@ export { logoImg };
 
 export const companyDetails = {
   phone: "+91 93536 20347",
-  address: "ABC Street, City, Country",
+  address:
+    "#46, 3rd A cross, chikkabommasandra , Yelahanka new town, Bangalore 560065",
   email: "primepinnacletechsolutions@gmail.com",
   linkedin:
     "https://www.linkedin.com/in/primepinnacle-techsolutions-87130b2b3/  ",
