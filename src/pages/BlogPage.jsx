@@ -29,103 +29,166 @@ const BlogPage = () => {
   } else {
     blogDetails = null;
   }
-  console.log(blogDetails, id, "asdfasdfasfd");
+
   return (
-    <div>
+    <div className="flex flex-col min-h-screen overflow-hidden">
       <WebsiteHeader />
-      <div className="pt-[12rem] pb-[10rem]">
-        <div className="wrapper">
-          {blogDetails.map((obj) => (
-            <div>
-              <div className="space-y-6">
-                <div>
-                  <img
-                    src={obj.image}
-                    alt=""
-                    className="max-h-[70vh] max-w-[90rem]"
-                  />
-                </div>
-                <h1 className="text-3xl">{obj?.title && obj?.title}</h1>
-                <h1 className="text-xl">{obj?.date && obj?.date}</h1>
-                <p className="text-base">{obj?.content && obj?.content}</p>
-                <div>
-                  {obj?.highlights?.map((obj, i) => (
-                    <div key={i}>
-                      {" "}
-                      <h3 className="text-lg font-medium">{obj}</h3>
+      <main className="flex-grow pt-24 pb-16 md:pt-32 md:pb-20">
+        <div className="container mx-auto px-4">
+          <div className=" mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Blog</h1>
+            <p className="text-lg text-gray-600">
+              We fuel you with our insights, corporate news, case studies,
+              updates on software, innovations, technologies and business
+              models.
+            </p>
+          </div>
+          {blogDetails &&
+            blogDetails.map((blog, index) => (
+              <article key={index} className="mb-16 last:mb-0">
+                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                  {blog?.image && (
+                    <div className="aspect-w-16 aspect-h-9 mb-6">
+                      <img
+                        src={blog?.image}
+                        alt={blog.title}
+                        className="object-cover w-full h-full"
+                      />
                     </div>
-                  ))}
-                </div>
-                <div>
-                  {obj?.commonTypes?.map((obj, i) => (
-                    <div key={i}>
-                      {" "}
-                      <h3 className="text-lg font-medium">{obj}</h3>
+                  )}
+                  <div className="px-6 py-8">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                      {blog.title}
+                    </h2>
+                    <p className="text-gray-600 mb-6">{blog.date}</p>
+                    <div className="prose max-w-none mb-8">
+                      <p>{blog.content}</p>
                     </div>
-                  ))}
+                    {blog.highlights && (
+                      <div className="mb-6">
+                        <h3 className="text-xl font-semibold mb-3">
+                          Highlights
+                        </h3>
+                        <ul className="list-disc pl-5 space-y-2">
+                          {blog.highlights.map((highlight, i) => (
+                            <li key={i} className="text-gray-700">
+                              {highlight}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {blog.commonTypes && (
+                      <div className="mb-6">
+                        <h3 className="text-xl font-semibold mb-3">
+                          Common Types
+                        </h3>
+                        <ul className="list-disc pl-5 space-y-2">
+                          {blog.commonTypes.map((type, i) => (
+                            <li key={i} className="text-gray-700">
+                              {type}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {blog.features && (
+                      <div className="mb-6">
+                        <h3 className="text-xl font-semibold mb-3">Features</h3>
+                        <ul className="list-disc pl-5 space-y-2">
+                          {blog.features.map((feature, i) => (
+                            <li key={i} className="text-gray-700">
+                              {feature}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {blog.strategies && (
+                      <div className="mb-6">
+                        <h3 className="text-xl font-semibold mb-3">
+                          Strategies
+                        </h3>
+                        <ul className="list-disc pl-5 space-y-2">
+                          {blog.strategies.map((strategy, i) => (
+                            <li key={i} className="text-gray-700">
+                              {strategy}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {blog.benefits && (
+                      <div className="mb-6">
+                        <h3 className="text-xl font-semibold mb-3">Benefits</h3>
+                        <ul className="list-disc pl-5 space-y-2">
+                          {blog.benefits.map((benefit, i) => (
+                            <li key={i} className="text-gray-700">
+                              {benefit}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {blog.steps && (
+                      <div className="mb-6">
+                        <h3 className="text-xl font-semibold mb-3">Steps</h3>
+                        <ol className="list-decimal pl-5 space-y-4">
+                          {blog.steps.map((stepObj, i) => (
+                            <li key={i}>
+                              <h4 className="font-semibold">{stepObj.step}</h4>
+                              <p className="text-gray-700">{stepObj.content}</p>
+                            </li>
+                          ))}
+                        </ol>
+                      </div>
+                    )}
+                    {blog.technologies && (
+                      <div className="mb-6">
+                        <h3 className="text-xl font-semibold mb-3">
+                          Technologies
+                        </h3>
+                        <div className="space-y-4">
+                          {blog.technologies.map((tech, i) => (
+                            <div key={i}>
+                              <h4 className="font-semibold">{tech.name}</h4>
+                              <p className="text-gray-700">
+                                {tech.description}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                    {blog.stories && (
+                      <div className="mb-6">
+                        <h3 className="text-xl font-semibold mb-3">Stories</h3>
+                        <div className="space-y-4">
+                          {blog.stories.map((story, i) => (
+                            <div key={i}>
+                              <h4 className="font-semibold">{story.step}</h4>
+                              <p className="text-gray-700">{story.content}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                    {blog.callToAction && (
+                      <div className="text-2xl font-bold mb-4">
+                        {blog.callToAction}
+                      </div>
+                    )}
+                    {blog.closingLine && (
+                      <div className="text-xl text-gray-700">
+                        {blog.closingLine}
+                      </div>
+                    )}
+                  </div>
                 </div>
-                <div>
-                  {obj?.features?.map((obj, i) => (
-                    <div key={i}>
-                      {" "}
-                      <h3 className="text-lg font-medium">{obj}</h3>
-                    </div>
-                  ))}
-                </div>
-                <div>
-                  {obj?.strategies?.map((obj, i) => (
-                    <div key={i}>
-                      {" "}
-                      <h3 className="text-lg font-medium">{obj}</h3>
-                    </div>
-                  ))}
-                </div>
-                <div>
-                  {obj?.benefits?.map((obj, i) => (
-                    <div key={i}>
-                      {" "}
-                      <h3 className="text-lg font-medium">{obj}</h3>
-                    </div>
-                  ))}
-                </div>
-                <div>
-                  {obj?.steps?.map((obj, i) => (
-                    <div key={i}>
-                      {" "}
-                      <h3 className="font-semibold">{obj.step}</h3>
-                      <p>{obj.content}</p>
-                    </div>
-                  ))}
-                </div>
-                <div>
-                  {obj?.technologies?.map((obj, i) => (
-                    <div key={i}>
-                      {" "}
-                      <h3 className="font-semibold">{obj?.name}</h3>
-                      <p>{obj?.description}</p>
-                    </div>
-                  ))}
-                </div>
-                <div>
-                  {obj?.stories?.map((obj, i) => (
-                    <div key={i}>
-                      {" "}
-                      <h3>{obj?.step}</h3>
-                      <p>{obj?.content}</p>
-                    </div>
-                  ))}
-                </div>
-                <h2 className="text-2xl">
-                  {obj?.callToAction && obj.callToAction}
-                </h2>
-                <h2 className="text-2xl">
-                  {obj?.closingLine && obj.closingLine}
-                </h2>
-              </div>
-            </div>
-          ))}
+              </article>
+            ))}
         </div>
-      </div>
+      </main>
       <WebsiteFooter />
     </div>
   );
