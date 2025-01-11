@@ -15,7 +15,7 @@ const ThankYou = () => {
   return (
     <>
       <div className="h-[calc(100vh-18rem)] flex flex-col items-center justify-center">
-        <div className="py-4 sticky top-0 w-full bg-secondary/60 backdrop-blur-md z-50 text-white">
+        <div className="py-4 sticky top-0 w-full bg-black/60 backdrop-blur-md z-50 text-white">
           <div className="wrapper flex justify-between items-center gap-10">
             <div className="flex justify-between items-center gap-20 w-full pl-[1rem] lg:pl-0">
               <Link smooth={true} to="/" className="cursor-pointer">
@@ -24,7 +24,7 @@ const ThankYou = () => {
                   src={logoImg}
                   width={150}
                   height={150}
-                  className="h-[3rem] md:h-[3.75rem] scale-125"
+                  className="h-[3rem] md:h-[3.5rem] w-fit scale-125 object-contain"
                   alt="logo"
                 />
               </Link>
@@ -33,7 +33,7 @@ const ThankYou = () => {
         </div>
         <div className="wrapper flex flex-col items-center justify-center h-full">
           <h1 className="heading-1">Thank You</h1>
-          <p className="text-center text-gray-200 text-sm md:text-base text-balance">
+          <p className="text-center text-gray-900 text-sm md:text-base text-balance">
             Thanks for contacting us, one of our associates will get in touch
             with you soon!
           </p>
@@ -45,7 +45,7 @@ const ThankYou = () => {
           </Link>
         </div>
       </div>
-      <div className="py-[3rem]">
+      <div className="py-[3rem] bg-black">
         <div className="wrapper flex lg:flex-row flex-col gap-7 sm:gap-14 justify-between">
           <div className="">
             <img
@@ -56,7 +56,7 @@ const ThankYou = () => {
               className="w-[10rem]"
               alt="logo"
             />
-            <p className="desc text-sm max-w-[22rem] mt-3">
+            <p className="desc text-sm max-w-[22rem] mt-3 !text-white">
               Our innovative solutions are designed not just to meet the demands
               of today but to anticipate the challenges of tomorrow, ensuring
               that your business stays ahead of the curve.
@@ -136,7 +136,7 @@ const ThankYou = () => {
                     <span className="text-sm">{companyDetails.phone}</span>
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     to={`tel:${companyDetails.phone2}`}
                     className="flex gap-3 text-white/70 hover:text-primary transition-colors duration-200"
@@ -148,7 +148,7 @@ const ThankYou = () => {
                     />{" "}
                     <span className="text-sm">{companyDetails.phone2}</span>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

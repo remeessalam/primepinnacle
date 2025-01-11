@@ -29,6 +29,7 @@ export { logoImg };
 
 export const companyDetails = {
   phone: "+91 93536 20347",
+  whatsappnumber: "9353620347",
   address:
     "#46, 3rd A cross, chikkabommasandra , Yelahanka new town, Bangalore 560065",
   email: "primepinnacletechsolutions@gmail.com",
