@@ -19,11 +19,12 @@ import {
 } from "react-icons/fa";
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { HiOutlineChatAlt2 } from "react-icons/hi";
-import { BiBarChartAlt2 } from "react-icons/bi";
+import { BiBarChartAlt2, BiPalette } from "react-icons/bi";
 import { RiChatSmile2Line } from "react-icons/ri";
-import { SiApple, SiFlutter } from "react-icons/si";
+import { SiApple, SiBlockchaindotcom, SiFlutter } from "react-icons/si";
 import { CgWebsite } from "react-icons/cg";
 import Blogs from "./pages/Blogs";
+import { BsCodeSlash } from "react-icons/bs";
 
 export { logoImg };
 
@@ -196,6 +197,20 @@ export const testimonials = [
 export const allServices = [
   {
     id: 1,
+    title: "Mobile App Development",
+    description:
+      "Achieve Mobile Supremacy through Custom App Development Solutions that Combine User-Centric Design, Seamless Functionality, and Sustainable Business Growth.",
+    icon: require("./assets/images/icons/appdev.png"),
+    iconComponent: (
+      <div className="w-[4rem] h-[4rem] rounded-full bg-primary/50 flex justify-center items-center">
+        <MdOutlineMobileFriendly className="h-[3.5rem] md:h-[4rem] object-contain scale-150" />
+      </div>
+    ),
+    detailContent:
+      "One of the key differences between mobile and web app development is the platform-specific nature of mobile apps. While web apps can be accessed on any device with a web browser, mobile apps are designed for specific platforms, such as iOS and Android. This necessitates developing separate versions for each platform, often using different programming languages and development environments.\n\nPerformance is another critical factor in mobile app development. With limited processing power and battery life, mobile devices demand optimized apps that run smoothly and efficiently. Developers must carefully consider factors such as memory usage, network connectivity, and power consumption to ensure a positive user experience.",
+  },
+  {
+    id: 2,
     title: "Web Development",
     description:
       "Our full-stack development services provide end-to-end solutions, combining front-end and back-end expertise for a future-proof digital presence.",
@@ -204,27 +219,96 @@ export const allServices = [
       <div className="w-[4rem] h-[4rem] rounded-full bg-primary/50 flex justify-center items-center">
         <AiOutlineCode className="h-[3.5rem] md:h-[4rem] object-contain scale-150" />
       </div>
-    ), // Represents coding and development
-    detailContent:
-      "In today's interconnected world, website applications have become an integral part of our daily lives. From e-commerce platforms to social media networks, from educational resources to government services, these digital tools have revolutionized the way we interact, communicate, and conduct business. The development of website applications is a complex process that involves a blend of creativity, technical expertise, and a deep understanding of user needs. \n\n At the core of website application development lies the interplay of front-end and back-end development. The front-end, or client-side, is what the user sees and interacts with. It encompasses the design, layout, and functionality of the website's interface. Popular front-end technologies include HTML, CSS, and JavaScript frameworks like React, Angular, and Vue.js. These tools enable developers to create visually appealing and intuitive user experiences.",
-  },
-  {
-    id: 2,
-    title: "Mobile App Development",
-    description:
-      "Achieve Mobile Supremacy through Custom App Development Solutions that Combine User- Centric Design, Seamless Functionality, and Sustainable Business Growth.",
-    icon: require("./assets/images/icons/appdev.png"),
-    iconComponent: (
-      <div className="w-[4rem] h-[4rem] rounded-full bg-primary/50 flex justify-center items-center">
-        <MdOutlineMobileFriendly className="h-[3.5rem] md:h-[4rem] object-contain scale-150" />
-      </div>
     ),
-
     detailContent:
-      "One of the key differences between mobile and web app development is the platform-specific nature of mobile apps. While web apps can be accessed on any device with a web browser, mobile apps are designed for specific platforms, such as iOS and Android. This necessitates developing separate versions for each platform, often using different programming languages and development environments.\n\nPerformance is another critical factor in mobile app development. With limited processing power and battery life, mobile devices demand optimized apps that run smoothly and efficiently. Developers must carefully consider factors such as memory usage, network connectivity, and power consumption to ensure a positive user experience.",
+      "In today's interconnected world, website applications have become an integral part of our daily lives. From e-commerce platforms to social media networks, from educational resources to government services, these digital tools have revolutionized the way we interact, communicate, and conduct business.\n\nAt the core of website application development lies the interplay of front-end and back-end development. The front-end, or client-side, is what the user sees and interacts with. It encompasses the design, layout, and functionality of the website's interface. Popular front-end technologies include HTML, CSS, and JavaScript frameworks like React, Angular, and Vue.js. These tools enable developers to create visually appealing and intuitive user experiences.",
   },
   {
     id: 3,
+    title: "UI/UX Design",
+    description:
+      "Deliver unparalleled user experiences with our innovative UI/UX design services that blend creativity and functionality.",
+    icon: require("./assets/images/icons/uiux.png"),
+    iconComponent: (
+      <div className="w-[4rem] h-[4rem] rounded-full bg-primary/50 flex justify-center items-center">
+        <BiPalette className="h-[3.5rem] md:h-[4rem] object-contain scale-150" />
+      </div>
+    ),
+    detailContent:
+      "UI/UX design is at the core of crafting applications and websites that are both aesthetically pleasing and highly functional. A well-designed user interface ensures easy navigation, while an engaging user experience keeps users coming back.\n\nOur approach includes user research, wireframing, prototyping, and usability testing to ensure that every design choice aligns with your business objectives and user expectations.",
+  },
+  {
+    id: 4,
+    title: "Chatbot Development",
+    description:
+      "Chatbots to redefine customer interaction, drive revenue, and future-proof your business.",
+    icon: require("./assets/images/icons/chatbot.png"),
+    iconComponent: (
+      <div className="w-[4rem] h-[4rem] rounded-full bg-primary/50 flex justify-center items-center">
+        <HiOutlineChatAlt2 className="h-[3.5rem] md:h-[4rem] object-contain scale-150" />
+      </div>
+    ),
+    detailContent:
+      "Chatbots are powered by natural language processing (NLP), enabling machines to understand and interpret human language. They can engage in meaningful conversations, answer questions, and provide personalized recommendations.\n\nBy automating routine tasks and providing immediate responses to customer inquiries, chatbots improve customer service and satisfaction while reducing operational costs.",
+  },
+  {
+    id: 5,
+    title: "Blockchain Solutions",
+    description:
+      "Revolutionize your business operations with secure, transparent, and decentralized blockchain solutions.",
+    icon: require("./assets/images/icons/blockchain.png"),
+    iconComponent: (
+      <div className="w-[4rem] h-[4rem] rounded-full bg-primary/50 flex justify-center items-center">
+        <SiBlockchaindotcom className="h-[3.5rem] md:h-[4rem] object-contain scale-150" />
+      </div>
+    ),
+    detailContent:
+      "Blockchain technology ensures data security and transparency in transactions. From cryptocurrency applications to supply chain management, blockchain can transform how businesses operate.\n\nOur blockchain solutions include smart contracts, decentralized apps (dApps), and secure payment systems tailored to your industry.",
+  },
+  {
+    id: 6,
+    title: "AI/ML Solutions",
+    description:
+      "Unlock next-gen customer experience with expertly crafted AI and machine learning solutions.",
+    icon: require("./assets/images/icons/ai.png"),
+    iconComponent: (
+      <div className="w-[4rem] h-[4rem] rounded-full bg-primary/50 flex justify-center items-center">
+        <GiArtificialIntelligence className="h-[3.5rem] md:h-[4rem] object-contain scale-150" />
+      </div>
+    ),
+    detailContent:
+      "AI and ML enable businesses to automate tasks, predict trends, and personalize experiences. Applications include customer behavior analysis, fraud detection, and intelligent recommendation systems.\n\nOur AI/ML solutions harness the power of data to deliver innovative and impactful results for your business.",
+  },
+  {
+    id: 7,
+    title: "IT Consulting & Strategy",
+    description:
+      "Connect IT and business for unparalleled success with our expert consulting, aligning IT infrastructure with business goals.",
+    icon: require("./assets/images/icons/itconsulting.png"),
+    iconComponent: (
+      <div className="w-[4rem] h-[4rem] rounded-full bg-primary/50 flex justify-center items-center">
+        <MdOutlineInsights className="h-[3.5rem] md:h-[4rem] object-contain scale-150" />
+      </div>
+    ),
+    detailContent:
+      "IT consulting helps businesses align their IT strategies with overall objectives. From assessments to optimization plans, our experts ensure your IT infrastructure enhances efficiency and security.\n\nWe address critical areas like cybersecurity, cloud migration, and operational scalability, offering comprehensive solutions tailored to your needs.",
+  },
+  {
+    id: 8,
+    title: "Custom Software Development",
+    description:
+      "Create tailored software solutions designed to meet your unique business needs and drive growth.",
+    icon: require("./assets/images/icons/customsoftware.png"),
+    iconComponent: (
+      <div className="w-[4rem] h-[4rem] rounded-full bg-primary/50 flex justify-center items-center">
+        <BsCodeSlash className="h-[3.5rem] md:h-[4rem] object-contain scale-150" />
+      </div>
+    ),
+    detailContent:
+      "Custom software development focuses on building applications specifically designed for your business processes.\n\nFrom concept to deployment, we ensure your software aligns with your goals, streamlining operations and enhancing efficiency.",
+  },
+  {
+    id: 9,
     title: "Cloud Migration Services",
     description:
       "Seamlessly transition your business to the cloud with expert migration strategies that minimize risk and maximize performance.",
@@ -233,93 +317,23 @@ export const allServices = [
       <div className="w-[4rem] h-[4rem] rounded-full bg-primary/50 flex justify-center items-center">
         <FaCloud className="h-[3.5rem] md:h-[4rem] object-contain scale-150" />
       </div>
-    ), // Represents cloud computing
+    ),
     detailContent:
-      "One of the primary drivers of cloud migration is the need for scalability. Traditional on-premises infrastructure can be inflexible, making it difficult to accommodate rapid growth or fluctuating workloads. Cloud platforms, on the other hand, offer virtually unlimited scalability, allowing businesses to easily adjust their resources to meet changing demands. This flexibility can significantly reduce costs and improve operational efficiency.\n\nCost-effectiveness is another compelling reason for organizations to consider cloud migration. Cloud providers often offer pay-as-you-go pricing models, which can result in significant cost savings compared to the upfront investments required for on-premises infrastructure. Additionally, cloud platforms can help reduce IT operational costs by automating routine tasks and eliminating the need for on-premises data centers.",
+      "Cloud platforms offer virtually unlimited scalability and cost-effectiveness.\n\nWe provide comprehensive migration strategies, ensuring minimal disruption while optimizing performance, flexibility, and operational efficiency.",
   },
   {
-    id: 4,
-    title: "AI Development",
-    description:
-      "Unlock Next-Gen Customer Experience with Expertly Crafted Conversational AI ",
-    icon: require("./assets/images/icons/ai.png"),
-    iconComponent: (
-      <div className="w-[4rem] h-[4rem] rounded-full bg-primary/50 flex justify-center items-center">
-        <GiArtificialIntelligence className="h-[3.5rem] md:h-[4rem] object-contain scale-150" />
-      </div>
-    ), // Represents AI and automation
-    detailContent:
-      "At the heart of AI development is the creation of algorithms and models that enable machines to learn from data and improve their performance over time. Machine learning, a subset of AI, involves training algorithms on large datasets to recognize patterns, make predictions, and automate tasks. Deep learning, a more advanced form of machine learning, utilizes artificial neural networks to process complex data and learn from it.\n\nAI development has a wide range of applications across various domains. In healthcare, AI is being used to diagnose diseases, develop new treatments, and personalize patient care. In finance, AI-powered systems are used for fraud detection, risk assessment, and algorithmic trading. In manufacturing, AI is driving automation, improving efficiency, and enhancing product quality.",
-  },
-  {
-    id: 5,
-    title: "Data Science Services",
-    description:
-      "Accelerate Business Growth and Unlock New Revenue Streams with Our Expert Data Science Solutions.",
-    icon: require("./assets/images/icons/datascience.png"),
-    iconComponent: (
-      <div className="w-[4rem] h-[4rem] rounded-full bg-primary/50 flex justify-center items-center">
-        <FaDatabase className="h-[3.5rem] md:h-[4rem] object-contain scale-150" />
-      </div>
-    ), // Represents data and analytics
-    detailContent:
-      "At the core of data science services lies the ability to collect, clean, and prepare data for analysis. Data scientists employ a variety of techniques to ensure data quality and reliability, including data cleansing, normalization, and feature engineering. Once the data is prepared, it can be subjected to statistical analysis, machine learning algorithms, and other data mining techniques to uncover meaningful patterns and trends.\n\nOne of the key benefits of data science services is the ability to make data-driven decisions. By analyzing vast amounts of data, businesses can gain valuable insights into customer behavior, market trends, and operational efficiency. Data science services also play a crucial role in driving innovation. By leveraging advanced analytics techniques, businesses can develop new products and services, identify emerging opportunities, and stay ahead of the competition. Additionally, data science can be used to create predictive models that can forecast future trends and anticipate risks.",
-  },
-  {
-    id: 6,
-    title: "IT Consulting & Strategy",
-    description:
-      "Connect IT and Business for Unparalleled Success with Our Expert Consulting, Aligning IT Infrastructure with Business Goals.",
-    icon: require("./assets/images/icons/itconsulting.png"),
-    iconComponent: (
-      <div className="w-[4rem] h-[4rem] rounded-full bg-primary/50 flex justify-center items-center">
-        <MdOutlineInsights className="h-[3.5rem] md:h-[4rem] object-contain scale-150" />
-      </div>
-    ), // Represents consulting and insights
-    detailContent:
-      "One of the primary roles of IT consulting firms is to help businesses align their IT strategies with their overall business objectives. By conducting thorough assessments and analyses, consultants can identify areas for improvement and recommend solutions that optimize efficiency, reduce costs, and enhance competitiveness. This may involve implementing new technologies, upgrading existing systems, or restructuring IT operations.\n\nIT consulting firms also play a vital role in addressing the security challenges faced by businesses today. In an increasingly interconnected world, protecting sensitive data from cyber threats is crucial. Consultants can help organizations assess their security vulnerabilities, implement robust security measures, and develop incident response plans to minimize the impact of potential breaches.",
-  },
-  {
-    id: 7,
-    title: "Chatbot Development",
-    description:
-      "Chatbots to Re-define Customer Interaction, Drive Revenue, and Future-Proof Your Business.",
-    icon: require("./assets/images/icons/chatbot.png"),
-    iconComponent: (
-      <div className="w-[4rem] h-[4rem] rounded-full bg-primary/50 flex justify-center items-center">
-        <HiOutlineChatAlt2 className="h-[3.5rem] md:h-[4rem] object-contain scale-150" />
-      </div>
-    ), // Represents chat or communication
-    detailContent:
-      "Chatbots are powered by natural language processing (NLP), a field of artificial intelligence that enables machines to understand and interpret human language. NLP techniques allow chatbots to process and analyze text, extract meaning, and generate appropriate responses. This capability has led to the development of chatbots that can engage in meaningful conversations, answer questions, and even provide personalized recommendations.\n\nOne of the primary benefits of chatbots is their ability to improve customer service. By automating routine tasks and providing immediate responses to customer inquiries, chatbots can reduce wait times, enhance customer satisfaction, and free up human agents to handle more complex issues. Additionally, chatbots can be used to collect customer feedback and insights, helping businesses to identify areas for improvement and tailor their offerings to meet customer needs.",
-  },
-  {
-    id: 8,
+    id: 10,
     title: "Data Analytics & Business Intelligence",
     description:
-      "Our cutting-edge analytics and Business Intelligence capabilities distil complex data in to clear, actionable insights.",
+      "Our cutting-edge analytics and BI capabilities distill complex data into clear, actionable insights.",
     icon: require("./assets/images/icons/dataanalytics.png"),
     iconComponent: (
       <div className="w-[4rem] h-[4rem] rounded-full bg-primary/50 flex justify-center items-center">
         <BiBarChartAlt2 className="h-[3.5rem] md:h-[4rem] object-contain scale-150" />
       </div>
-    ), // Represents analytics and BI
+    ),
     detailContent:
-      "Data analytics involves the process of examining data to uncover patterns, trends, and insights. It encompasses a wide range of techniques, including statistical analysis, machine learning, and data mining. By applying these methods to large datasets, organizations can extract valuable information that can be used to inform decision-making.\n\nBusiness intelligence, on the other hand, focuses on providing actionable insights to support strategic decision-making. BI tools and platforms enable organizations to collect, store, and analyze data from various sources, transforming raw data into meaningful information that can be easily understood and visualized.",
-  },
-  {
-    id: 9,
-    title: "Natural Language Processing (NLP)",
-    description:
-      "Our advanced NLP capabilities empower applications to decipher, analyze, and respond to human language.",
-    icon: require("./assets/images/icons/nlp.png"),
-    iconComponent: (
-      <div className="w-[4rem] h-[4rem] rounded-full bg-primary/50 flex justify-center items-center">
-        <RiChatSmile2Line className="h-[3.5rem] md:h-[4rem] object-contain scale-150" />
-      </div>
-    ), // Represents NLP and conversational AI
-    detailContent:
-      "NLP has a wide range of applications across various domains. In customer service, chatbots and virtual assistants powered by NLP can provide immediate responses to customer inquiries and automate routine tasks. In healthcare, NLP can be used to analyze medical records, extract information from clinical notes, and assist in drug discovery. In the legal field, NLP can be used to automate document review, extract key information from legal contracts, and provide legal research assistance.\n\nAs NLP technology continues to advance, we can expect to see even more innovative applications emerging. For example, NLP-powered systems could be used to create intelligent personal assistants that can understand our needs and preferences, or to develop more accurate and natural-sounding language translation tools. However, the development of NLP is not without its challenges. Issues such as bias, privacy, and ethical considerations must be carefully addressed.",
+      "Data analytics uncovers patterns and trends, providing actionable insights for decision-making. Business intelligence tools transform raw data into meaningful information.\n\nOur solutions empower organizations with predictive analytics, real-time reporting, and visualizations to drive growth.",
   },
 ];
 

@@ -2,7 +2,7 @@ import React from "react";
 import ourValuesIcon1 from "../../assets/images/icons/innovation&excellence.png";
 import ourValuesIcon2 from "../../assets/images/icons/integrity&transparency.png";
 import SubHeading from "../SubHeading";
-
+import overvalues from "../../assets/images/overvalues.jpg";
 const OurValue = () => {
   return (
     <section className="bg-primary/45 py-[5rem]">
@@ -53,6 +53,13 @@ const OurValue = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div>
+          <img
+            src={overvalues}
+            alt=""
+            className="max-h-[35rem] w-full object-cover rounded-lg"
+          />
         </div>
         {/* <div
           data-aos="fade-up"

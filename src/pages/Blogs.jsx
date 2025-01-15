@@ -9,9 +9,13 @@ const Blogs = () => {
     <div>
       <WebsiteHeader />
       <div className="wrapper pt-[12rem] pb-[10rem]">
-        <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
+        <h1 className="text-3xl font-bold text-center mb-5 text-gray-800">
           Blogs
         </h1>
+        <p className="desc mb-8 text-center">
+          We fuel you with our insights, corporate news, case studies, updates
+          on software, innovations, technologies and business models.
+        </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {blogs.map((blog) => (
             <div

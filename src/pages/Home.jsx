@@ -9,8 +9,12 @@ import SubHeading from "../components/SubHeading";
 import { BsPhone } from "react-icons/bs";
 import { MdOutlineInsights } from "react-icons/md";
 import { AiOutlineCode } from "react-icons/ai";
-const WebsiteHeader = React.lazy(() =>
-  import("../components/website/WebsiteHeader")
+import { BiPalette } from "react-icons/bi";
+import { HiOutlineChatAlt2 } from "react-icons/hi";
+const WebsiteHeader = React.lazy(
+  () => import("../components/website/WebsiteHeader")
+
+  // #0885AA
 );
 const TrustWorthySection = React.lazy(() =>
   import("../components/TrustWorthySection")
@@ -35,7 +39,7 @@ const Home = () => {
     <>
       <WebsiteHeader />
       <section className="h-screen relative text-white">
-        <div className="absolute top-0 w-full h-full bg-black/50"></div>
+        <div className="absolute top-0 w-full h-full bg-black/60"></div>
         <img
           loading="lazy"
           src={bannerImg}
@@ -58,7 +62,9 @@ const Home = () => {
               PRIME PINNACLE
             </span> */}
           </p>
-          <h1 className="heading text-stroke">PRIME PINNACLE</h1>
+          <h1 className="text-[2.5rem] md:text-[6rem] font-bold leading-[1] text-stroke">
+            PRIME PINNACLE TECHSOLUTIONS
+          </h1>
           <p className="sub-heading">
             Powering the Future with Intelligent Solutions
           </p>
@@ -66,7 +72,7 @@ const Home = () => {
       </section>
       <div
         data-aos="fade-up"
-        className="md:-mt-[7rem] py-[2rem] relative z-10 max-w-6xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-3 gap-5"
+        className="md:-mt-[7rem] py-[2rem] relative z-10 max-w-6xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-4 gap-5"
       >
         <div className="bg-secondary rounded-lg p-5 shadow-xl">
           <div className="flex gap-3 mb-4">
@@ -82,7 +88,7 @@ const Home = () => {
               alt=""
             /> */}
             <p className="text-lg leading-tight font-medium text-primary">
-              Mobile Application Development
+              Mobile
             </p>
           </div>
           <p className="desc text-black">
@@ -100,15 +106,15 @@ const Home = () => {
               alt=""
             /> */}
             <div className="w-[4rem] h-[4rem] rounded-full bg-primary/50 flex justify-center items-center">
-              <MdOutlineInsights className="w-[4rem] scale-150 object-contain" />
+              <BiPalette className="w-[4rem] scale-150 object-contain" />
             </div>
             <p className="text-lg leading-tight font-medium text-primary">
-              IT Consulting & Strategy
+              UI UX
             </p>
           </div>
           <p className="desc">
-            Connect IT and Business for Unparalleled Success with Our Expert
-            Consulting, Aligning IT and Growth
+            Deliver unparalleled user experiences with our innovative UI/UX
+            design services that blend creativity and functionality.
           </p>
         </div>
         <div className="bg-secondary rounded-lg p-5 shadow-xl">
@@ -125,11 +131,33 @@ const Home = () => {
               <AiOutlineCode className="w-[4rem] scale-150 object-contain" />
             </div>
             <p className="text-lg leading-tight font-medium text-primary">
-              Website Application Development
+              Website
             </p>
           </div>
           <p className="desc">
             Our full-stack development services provideend - to -end solutions
+          </p>
+        </div>
+        <div className="bg-secondary rounded-lg p-5 shadow-xl">
+          <div className="flex gap-3 mb-4">
+            {/* <img
+              loading="lazy"
+              src={icon3}
+              width="50"
+              height="50"
+              className="w-[3rem] object-contain"
+              alt=""
+            /> */}
+            <div className="w-[4rem] h-[4rem] rounded-full bg-primary/50 flex justify-center items-center">
+              <HiOutlineChatAlt2 className="w-[4rem] scale-150 object-contain" />
+            </div>
+            <p className="text-lg leading-tight font-medium text-primary">
+              Chatbot
+            </p>
+          </div>
+          <p className="desc">
+            Chatbots to redefine customer interaction, drive revenue, and
+            future-proof your business.
           </p>
         </div>
       </div>
