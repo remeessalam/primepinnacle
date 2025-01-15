@@ -196,12 +196,12 @@ const Home = () => {
                 Transforming Visions into Reality
               </h2>
               <p className="desc">
-                At <b>PRIME PINNACLE</b>, we leverage the transformative power
-                of artificial intelligence to catalyze remarkable change across
-                industries. Our unwavering commitment to transparency and
-                reliability is what truly sets us apart in a crowded market
-                place .We empower organizations with cutting-edge AI
-                technologies that elevate data-driven insights, streamline
+                At <b>PRIME PINNACLE TECH SOLUTIONS</b>, we leverage the
+                transformative power of artificial intelligence to catalyze
+                remarkable change across industries. Our unwavering commitment
+                to transparency and reliability is what truly sets us apart in a
+                crowded market place .We empower organizations with cutting-edge
+                AI technologies that elevate data-driven insights, streamline
                 complex processes, and ignite strategic growth.
                 <br />
                 <br />

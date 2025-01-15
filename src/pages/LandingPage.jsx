@@ -52,7 +52,9 @@ const LandingPage = ({ page }) => {
         >
           <p className="text-xl">
             Welcome to{" "}
-            <span className="text-white font-semibold">PRIME PINNACLE</span>
+            <span className="text-white font-semibold">
+              PRIME PINNACLE TECH SOLUTIONS
+            </span>
           </p>
           <h1 className="heading-1 text-strokewhite ">
             {isWebLanding

@@ -14,9 +14,9 @@ export const mobileAppDevelopmentContent = [
       "In the digital era, mobile apps have revolutionized how businesses interact with their audience, and at Prime Pinnacle Tech Solutions, this transformation takes center stage. Our approach to mobile app development is not just about coding; it’s about creating dynamic solutions that align seamlessly with business objectives and user needs. Here’s an exclusive look behind the scenes of our mobile app development journey.",
   },
   {
-    title: "The Prime Pinnacle Approach",
+    title: "The Prime Pinnacle Tech Solutions Approach",
     content:
-      "Every app starts with an idea, but turning that idea into a functional, user-friendly application requires expertise, creativity, and meticulous planning. At Prime Pinnacle, our team of experienced developers, designers, and strategists collaborates closely with clients to bring their visions to life.",
+      "Every app starts with an idea, but turning that idea into a functional, user-friendly application requires expertise, creativity, and meticulous planning. At Prime Pinnacle Tech Solutions, our team of experienced developers, designers, and strategists collaborates closely with clients to bring their visions to life.",
     highlights: [
       "User Experience (UX): Focusing on intuitive and visually appealing interfaces to enhance user engagement.",
       "Performance: Ensuring apps run smoothly across devices and operating systems, optimizing for speed and efficiency.",
@@ -212,7 +212,7 @@ export const fraudPreventionContent = [
   {
     title: "Why Choose Prime Pinnacle Tech Solutions?",
     content:
-      "At Prime Pinnacle, we combine innovation with expertise to provide tailored fraud prevention solutions for businesses of all sizes. Our team excels in:",
+      "At Prime Pinnacle Tech Solutions, we combine innovation with expertise to provide tailored fraud prevention solutions for businesses of all sizes. Our team excels in:",
     benefits: [
       "Customizable Solutions: Adapting strategies to your specific industry and risks.",
       "Scalable Technology: Ensuring our solutions grow alongside your business.",

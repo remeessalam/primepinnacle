@@ -67,11 +67,11 @@ const AboutUs = () => {
                 Transforming Visions into Technological Reality
               </h2>
               <p className="desc">
-                At <b>PRIME PINNACLE</b>, we leverage the transformative power
-                of artificial intelligence to catalyse remarkable change across
-                industries. Our unwaveringcommitment to transparency and
-                reliability is what truly sets us apart in a crowded
-                marketplace.
+                At <b>PRIME PINNACLE TECH SOLUTIONS</b>, we leverage the
+                transformative power of artificial intelligence to catalyse
+                remarkable change across industries. Our unwaveringcommitment to
+                transparency and reliability is what truly sets us apart in a
+                crowded marketplace.
               </p>
             </div>
           </div>
@@ -100,9 +100,9 @@ const AboutUs = () => {
               className="flex h-full items-center md:items-start flex-col gap-7"
             >
               <p className="desc">
-                At <b>PRIME PINNACLE</b>, we don’t just build AI; we craft
-                intelligent ecosystems that evolve and thrive alongside your
-                business.
+                At <b>PRIME PINNACLE TECH SOLUTIONS</b>, we don’t just build AI;
+                we craft intelligent ecosystems that evolve and thrive alongside
+                your business.
                 <br />
                 <br />
                 Situated in the heart of Bengaluru's vibrant innovation hub, our

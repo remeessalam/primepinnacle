@@ -22,7 +22,7 @@ const Services = () => {
       <WebsiteHeader />
       <PageBanner
         title="Our Services"
-        desc="At PRIME PINNACLE, we are not just committed to driving growth; we also cultivate a culture of continuous learning and innovation within our team. Our passionate engineers and data scientists are encouraged to explore new ideas, push boundaries, and embrace the latest advancements in AI technology."
+        desc="At PRIME PINNACLE TECH SOLUTIONS, we are not just committed to driving growth; we also cultivate a culture of continuous learning and innovation within our team. Our passionate engineers and data scientists are encouraged to explore new ideas, push boundaries, and embrace the latest advancements in AI technology."
       />
       <AllServices />
       <OurValue />

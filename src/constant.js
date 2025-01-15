@@ -172,26 +172,63 @@ export const appDevelopmentServices = [
 export const testimonials = [
   {
     id: 1,
+    name: "James Carter",
+    position: "CEO, Innovate Ventures",
+    img: require("./assets/images/testimonial4.jpg"),
+    desc: "“PRIME PINNACLE TECHSOLUTIONS transformed our app idea into a dynamic, user-friendly platform that has revolutionized the way we engage with our audience. The team's technical expertise and attention to detail ensured our app not only met but exceeded our expectations. Achieving mobile supremacy was effortless with their innovative solutions!”",
+  },
+  {
+    id: 1,
     name: "John Doe",
     position: "CEO of Innovative Tech Corp",
     img: require("./assets/images/testimonial1.png"),
-    desc: "“Partnering with PRIME PINNACLE has been nothing short of a revelation for our organization. Their unwavering commitment to ethical AI has not only streamlined our operations but has also resonated deeply with our core values”",
+    desc: "“The UI/UX designs from PRIME PINNACLE TECHSOLUTIONS are nothing short of extraordinary. They seamlessly combined creativity and functionality to deliver a user experience that resonates deeply with our audience. Our product engagement has skyrocketed since implementing their designs!”",
   },
   {
     id: 2,
     name: "Sarah Jardin",
     position: "Director of Operations at Green Future Ltd",
     img: require("./assets/images/testimonial2.png"),
-    desc: "“The exceptional team at PRIME PINNACLE took the time to thoroughly understand our unique challenges and crafted bespoke solutions that far exceeded our expectations.”",
+    desc: "“PRIME PINNACLE TECHSOLUTIONS brought our vision to life with their full-stack website development services. From concept to execution, they delivered a robust and visually stunning website that meets all our business needs. Their end-to-end solutions have significantly enhanced our online presence.”",
   },
   {
     id: 3,
     name: "Velicia Jamez",
     position: "CTO of Health Innovations Group",
     img: require("./assets/images/testimonial3.png"),
-    desc: "“PRIME PINNACLE stands at the forefront of ethical artificial intelligence. Their invaluable insights and expertise have been instrumental as we navigate the intricate landscape of implementing AI technologies within our business.”",
+    desc: "“The chatbot developed by PRIME PINNACLE TECHSOLUTIONS has been a game-changer for our business. It streamlines customer interactions, enhances user satisfaction, and has contributed to a noticeable increase in revenue. Their cutting-edge approach ensures our business stays future-proof.”",
   },
 ];
+// const testimonials = [
+//   {
+//     id: 1,
+//     name: "James Carter",
+//     designation: "CEO, Innovate Ventures",
+//     feedback:
+//       "PRIME PINNACLE TECHSOLUTIONS transformed our app idea into a dynamic, user-friendly platform that has revolutionized the way we engage with our audience. The team's technical expertise and attention to detail ensured our app not only met but exceeded our expectations. Achieving mobile supremacy was effortless with their innovative solutions!",
+//   },
+//   {
+//     id: 2,
+//     name: null,
+//     designation: null,
+//     feedback:
+//       "The UI/UX designs from PRIME PINNACLE TECHSOLUTIONS are nothing short of extraordinary. They seamlessly combined creativity and functionality to deliver a user experience that resonates deeply with our audience. Our product engagement has skyrocketed since implementing their designs!",
+//   },
+//   {
+//     id: 3,
+//     name: null,
+//     designation: null,
+//     feedback:
+//       "PRIME PINNACLE TECHSOLUTIONS brought our vision to life with their full-stack website development services. From concept to execution, they delivered a robust and visually stunning website that meets all our business needs. Their end-to-end solutions have significantly enhanced our online presence.",
+//   },
+//   {
+//     id: 4,
+//     name: null,
+//     designation: null,
+//     feedback:
+//       "The chatbot developed by PRIME PINNACLE TECHSOLUTIONS has been a game-changer for our business. It streamlines customer interactions, enhances user satisfaction, and has contributed to a noticeable increase in revenue. Their cutting-edge approach ensures our business stays future-proof.",
+//   },
+// ];
 
 // all services
 export const allServices = [
