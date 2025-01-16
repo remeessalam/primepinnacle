@@ -88,7 +88,7 @@ const Home = () => {
               alt=""
             /> */}
             <p className="text-lg leading-tight font-medium text-primary">
-              Mobile
+              Mobile App Development
             </p>
           </div>
           <p className="desc text-black">
@@ -109,7 +109,7 @@ const Home = () => {
               <BiPalette className="w-[4rem] scale-150 object-contain" />
             </div>
             <p className="text-lg leading-tight font-medium text-primary">
-              UI UX
+              UI UX Design
             </p>
           </div>
           <p className="desc">
@@ -131,7 +131,7 @@ const Home = () => {
               <AiOutlineCode className="w-[4rem] scale-150 object-contain" />
             </div>
             <p className="text-lg leading-tight font-medium text-primary">
-              Website
+              Website Development
             </p>
           </div>
           <p className="desc">
@@ -152,7 +152,7 @@ const Home = () => {
               <HiOutlineChatAlt2 className="w-[4rem] scale-150 object-contain" />
             </div>
             <p className="text-lg leading-tight font-medium text-primary">
-              Chatbot
+              Chatbot Development
             </p>
           </div>
           <p className="desc">
